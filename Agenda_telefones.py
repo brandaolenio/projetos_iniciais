@@ -1,6 +1,6 @@
 from time import sleep
 
-AGENDA = {'Tulio': '3333-3333', 'Lenio':'1111-1111'}
+AGENDA = {'Tulio': '3333-3333'}
 
 def exibir_agenda():
   # TODO: Criar nesse método a exibição de todos os contatos e telefones da sua agenda
