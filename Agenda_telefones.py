@@ -92,7 +92,7 @@ def menu_agenda():
     elif opcao == 3:
         pesquisar_contato()
     elif opcao == 4:
-        remover_contato
+        remover_contato()
     elif opcao == 5:
         print('Agenda sendo fechada')
         sleep(1)
