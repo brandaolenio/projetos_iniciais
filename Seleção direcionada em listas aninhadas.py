@@ -11,17 +11,11 @@ def nested_list():
         nota = float(input("Informe a nota desse aluno: "))
         lista1.append([nome, nota])
         lista1.sort(key=operator.itemgetter(1))
-    lista2 = []
-    for i in lista1:
-        if i[1] > lista1[0][1]:
-           lista2.append(i)
-           lista2.sort(key=operator.itemgetter(1))
-    alunos = []
-    for j in lista2:
-        if j[1] == lista2[0][1]:
-            alunos.append(j)
-            alunos.sort()
-    for x in alunos:
-        print(x[0])
+    lista2 = [x for x in lista1 if x[1] > lista1[0][1]]
+    lista2.sort(key=operator.itemgetter(1))
+    alunos = [y for y in lista2 if y[1] == lista2[0][1]]
+    alunos.sort()
+    for z in alunos:
+        print(z[0])
 
 nested_list()
