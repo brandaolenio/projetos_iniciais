@@ -1,1 +1,0 @@
-return menu_agenda()
