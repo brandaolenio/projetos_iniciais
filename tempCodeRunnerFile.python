@@ -1,8 +1,0 @@
-from configparser import LegacyInterpolation
-
-
-items = []
-name = 'lenio'
-price = 1
-item = item(name, int(price))
-items.append(item)
